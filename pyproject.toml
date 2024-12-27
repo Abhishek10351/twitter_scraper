@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "twitter-scraper"
+version = "0.1.0"
+description = "A scraper that scrapes the top trending topics on the twitter homepage"
+authors = ["Abhishek Kashyap <abhik5567@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+django = "^5.1.4"
+selenium = "^4.27.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
