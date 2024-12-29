@@ -2,12 +2,46 @@
 <html>
 <head>
     <title>Twitter Scraper</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        h1 {
+            background-color: #1da1f2;
+            color: white;
+            padding: 20px;
+            margin: 0;
+        }
+
+        form {
+            margin: 20px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #1da1f2;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0d8bf0;
+            cursor: pointer;
+        }
+    </style>
 </head>
+
 <body>
     <h1>Twitter Scraper</h1>
     <form method="post">
         {% csrf_token %}
-        <button type="submit">Scrape</button>
+        <button type="submit">Click here to run the script</button>
     </form>
 </body>
 </html>
