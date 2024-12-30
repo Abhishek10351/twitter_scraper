@@ -32,11 +32,12 @@ li {
     margin: 10px;
     border-radius: 5px;
 }
-p.data {
+pre.data {
     background-color: #f0f0f0;
     padding: 10px;
     margin: 10px;
     border-radius: 5px;
+    border: 1px solid #ccc;
 }
 form {
     margin: 20px;
