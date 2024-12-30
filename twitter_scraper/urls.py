@@ -16,7 +16,9 @@ Including another URLconf
 """
 
 from django.urls import path, include
+from django.conf.urls.static import static
+from django.conf import settings
 
-urlpatterns = [
-    path("", include("scraper.urls")),
-]
+urlpatterns = [path("", include("scraper.urls"))]
+
+urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
