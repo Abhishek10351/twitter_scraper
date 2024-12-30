@@ -4,6 +4,8 @@ A scraper that scrapes the top trending topics on the twitter homepage
 
 ## Installation
 
+** Important: install python3 and mongo db in your local system before hand.**
+
 ### With poetry
 
 ```bash
