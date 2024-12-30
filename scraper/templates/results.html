@@ -2,55 +2,8 @@
 <html>
     <head>
         <title>Scraped Tweets</title>
-        <style>
-            body {
-                font-family: Arial, sans-serif;
-                margin: 0;
-                padding: 0;
-                background-color: #f0f0f0;
-            }
-
-            h1 {
-                background-color: #1da1f2;
-                color: white;
-                padding: 20px;
-                margin: 0;
-            }
-
-            p {
-                padding: 10px;
-            }
-
-            ul {
-                list-style-type: none;
-                padding: 0;
-            }
-
-            li {
-                background-color: white;
-                padding: 10px;
-                margin: 10px;
-                border-radius: 5px;
-            }
-            button {
-                background-color: #1da1f2;
-                color: white;
-                padding: 10px;
-                border: none;
-                border-radius: 5px;
-                margin: 10px;
-            }
-            pre {
-                background-color: #f0f0f0;
-                padding: 10px;
-                margin: 10px;
-                border-radius: 5px;
-            }
-            button:hover {
-                background-color: #0f75bc;
-                cursor: pointer;
-            }
-        </style>
+        {% load static %}
+        <link rel="stylesheet" href="{% static 'app.css' %}" />
     </head>
 
     <body>
@@ -63,7 +16,7 @@
         </ul>
         <p>The ip address used for this query is</p>
         Here&apos;s a JSON extract of this record from the MongoDB:
-        <pre>{{ inserted_data}}</pre>
+        <p class="data">{{ inserted_data }}</p>
         <form action="/" method="post">
             {% csrf_token %}
             <button type="submit">Scrape Again</button>
